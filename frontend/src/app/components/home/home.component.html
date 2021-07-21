@@ -1,0 +1,34 @@
+<div class="container-fluid">
+    <h2>Employee Profile</h2>
+
+    <form [formGroup]="employeeForm" (ngSubmit)="onSubmit()">
+
+        <div style="margin-top:1em">
+            <label>First Name</label>
+            <input formControlName="firstName" type="text">
+        </div>
+
+        <div style="margin-top:1em">
+            <label>Last Name</label>
+            <input formControlName="lastName" type="text">
+        </div>
+
+        <div style="margin-top:1em">
+            <input formControlName="sex" type="radio" value="male">Male
+            <input formControlName="sex" type="radio" value="female">Female
+        </div>
+
+        <div style="margin-top:1em">
+            <label>Birth Date</label>
+            <input formControlName="birthDate" type="date">
+        </div>
+
+        <button style="margin-top:1em"
+            class="btn btn-primary" 
+            type="submit">
+            Add
+        </button>
+
+    </form>
+    
+</div>
